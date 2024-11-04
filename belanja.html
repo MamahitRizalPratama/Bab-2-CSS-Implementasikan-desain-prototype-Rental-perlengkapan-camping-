@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belanja</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="stylebab2.css">
+</head>
+<body>
+    <div class="header">
+        <div>
+            <a href="index.html">BERANDA</a>
+        <h1>Belanja</h1>
+    </div>
+    <div class="products">
+        <!-- Kategori Snack -->
+        <div class="product" onclick="openModal('Chips', 'Rp.10.000')">
+            <img src="bahan/chips.jpeg" alt="Chips">
+            <p>Chips</p>
+            <p>Rp.10.000</p>
+        </div>
+        <div class="product" onclick="openModal('roti', 'Rp.15.000')">
+            <img src="bahan/roti.jpeg" alt="roti">
+            <p>roti</p>
+            <p>Rp.15.000</p>
+        </div>
+
+        <!-- Kategori Minuman -->
+        <div class="product" onclick="openModal('air mineral', 'Rp.8.000')">
+            <img src="bahan/air mineral.jpeg" alt="air mineral">
+            <p>air mineral</p>
+            <p>Rp.8.000</p>
+        </div>
+        <div class="product" onclick="openModal('kopi', 'Rp.12.000')">
+            <img src="bahan/kopi.jpeg" alt="kopi">
+            <p>kopi</p>
+            <p>Rp.12.000</p>
+        </div>
+
+        <!-- Kategori Mie -->
+        <div class="product" onclick="openModal('mie', 'Rp.5.000')">
+            <img src="bahan/mie.jpeg" alt="mie">
+            <p>mie</p>
+            <p>Rp.5.000</p>
+        </div>
+        <div class="product" onclick="openModal('mie cup', 'Rp.6.000')">
+            <img src="bahan/cup mie.jpeg" alt="mie cup">
+            <p>mie cup</p>
+            <p>Rp.6.000</p>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="productTitle"></h2>
+            <p id="productPrice"></p>
+        </div>
+    </div>
+
+</body>
+</html>
